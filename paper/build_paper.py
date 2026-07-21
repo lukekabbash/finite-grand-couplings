@@ -54,7 +54,7 @@ from academic_pdf import (  # noqa: E402
 OUTPUT = Path(__file__).resolve().with_name("grand-coupling-counterexample.pdf")
 TITLE_TEXT = "Coalescence-Class Cardinalities in Finite Grand Couplings Need Not Be Deterministic"
 SHORT_TITLE = "Coalescence-class cardinalities"
-AUTHOR_TEXT = "Luke Kabbash"
+AUTHOR_TEXT = "Luke Kabbash | Project initiator"
 MANUSCRIPT_DATE = "20 July 2026"
 
 
@@ -543,7 +543,7 @@ def build_story(width: float):
         [
             h1("Author's note on provenance"),
             p(
-                "This paper is part of an independent experiment in AI-assisted mathematical research. Luke Kabbash is an independent experimenter, not a professional mathematician, and does not hold a doctorate in mathematics. The research, software, and manuscript were substantially generated with OpenAI's GPT-5.6 Sol under human direction. The aim is to test whether an LLM-centered workflow can produce new, independently checkable mathematical knowledge, not to imply conventional mathematical training or peer-reviewed authority. Readers should therefore treat the result as a reproducible research claim awaiting specialist review. Deterministic code and frozen artifacts are supplied so the claims can be assessed on their evidence. Specialist criticism is invited. Demonstrated errors will be documented and corrected, or the affected claims withdrawn.",
+                "This paper is the output of a mostly autonomous experiment in AI-assisted mathematical research. OpenAI's GPT-5.6 Sol searched for a tractable problem, developed the claimed result, wrote the supporting software and verification design, and drafted the manuscript with minimal human intervention. The human project lead initiated the experiment through an OpenAI subscription, prompted occasionally when the process reached stopping points, set disclosure and release standards, and chose to make the result available for review. The work is not presented as primarily human mathematical research or as evidence of conventional mathematical training. Readers should treat the result as a reproducible research claim awaiting specialist review. Deterministic code and frozen artifacts are supplied so the claims can be assessed on their evidence. Specialist criticism is invited. Demonstrated errors will be documented and corrected, or the affected claims withdrawn.",
                 BODY_SMALL,
             ),
             p(
