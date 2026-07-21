@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this review package, please cite the release and the Grimmett-Holmes source problem."
+title: "Coalescence-Class Cardinalities in Finite Grand Couplings Need Not Be Deterministic"
+type: software
+abstract: >-
+  A reproducible research package containing a symbolic counterexample family,
+  a computer-assisted state-minimality theorem, independent implementations,
+  frozen results, an internal audit, and the accompanying manuscript.
+authors:
+  - family-names: Kabbash
+    given-names: Luke
+version: 1.0.0-rc.1
+date-released: 2026-07-21
+repository-code: "https://github.com/lukekabbash/finite-grand-couplings"
+url: "https://github.com/lukekabbash/finite-grand-couplings/releases/tag/v1.0.0-rc.1"
+keywords:
+  - grand coupling
+  - Markov chain
+  - random mapping representation
+  - transformation monoid
+  - computer-assisted proof
+references:
+  - type: article
+    authors:
+      - family-names: Grimmett
+        given-names: Geoffrey R.
+      - family-names: Holmes
+        given-names: Mark
+    title: "Coalescence in Markov Chains"
+    journal: "Journal of Theoretical Probability"
+    year: 2026
+    doi: "10.1007/s10959-026-01500-w"
