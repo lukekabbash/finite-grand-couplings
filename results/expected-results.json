@@ -1,0 +1,61 @@
+{
+  "theorem": {
+    "states": "4m+2",
+    "minimum_rank": 2,
+    "profiles": [
+      "(2m,2m+2)",
+      "(2m+1,2m+1)"
+    ],
+    "probabilities": [
+      "1/(2-p)",
+      "(1-p)/(2-p)"
+    ],
+    "evidence": "symbolic"
+  },
+  "six_state": {
+    "reachable_prefix_states_including_identity": 22,
+    "nonidentity_semigroup_elements": 21,
+    "minimum_rank": 2,
+    "profiles": [
+      [2, 4],
+      [3, 3]
+    ]
+  },
+  "two_map_census": {
+    "4": {
+      "pairs": 32640,
+      "strongly_connected_pairs": 10476,
+      "nonsynchronizing_pairs": 1152,
+      "hits": 0
+    },
+    "5": {
+      "pairs": 4881250,
+      "strongly_connected_pairs": 1277160,
+      "nonsynchronizing_pairs": 60000,
+      "hits": 0
+    }
+  },
+  "kernel_graph_census": {
+    "five_state": {
+      "labelled_candidates": 150,
+      "isomorphism_classes": 3,
+      "endomorphism_counts": [48, 42, 50],
+      "transitive_classes": 0
+    },
+    "six_state_rank_two": {
+      "labelled_candidates": 90,
+      "isomorphism_classes": 1,
+      "endomorphisms": 144,
+      "transitive": true
+    }
+  },
+  "family_checks": {
+    "python_exact_m_max": 8,
+    "cpp_exact_m_max": 24,
+    "largest_checked_state_count": 98,
+    "observed_semigroup_size": "20m+2",
+    "observed_formula_is_not_claimed_as_a_theorem": true
+  },
+  "experiment_seed": 3231835598
+}
+
