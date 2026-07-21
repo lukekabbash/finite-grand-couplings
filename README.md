@@ -96,7 +96,7 @@ The root scripts resolve their own location. The folder may therefore be moved, 
 
 ## Research provenance
 
-This is an independent experiment in AI-assisted mathematical research led by Luke Kabbash, who is not a professional mathematician and does not hold a doctorate in mathematics. The research, software, and manuscript were substantially generated with OpenAI's GPT-5.6 Sol under human direction. The project tests whether an LLM-centered workflow can produce new, independently checkable mathematical knowledge. Its claims should be treated as reproducible research claims awaiting specialist review, not as claims to conventional mathematical authority. Demonstrated errors will be documented and corrected, or the affected claims withdrawn.
+This repository documents a mostly autonomous experiment in AI-assisted mathematical research. OpenAI's GPT-5.6 Sol searched for a tractable problem, developed the claimed result, wrote the supporting software and verification design, and drafted the manuscript with minimal human intervention. Human involvement was limited to initiating the experiment through an OpenAI subscription, prompting occasionally when the process reached stopping points, setting disclosure and release standards, and deciding to make the result available for review. The project tests whether an LLM-centered workflow can produce new, independently checkable mathematical knowledge; it is not presented as primarily human mathematical work or as a claim to conventional mathematical authority. Demonstrated errors will be documented and corrected, or the affected claims withdrawn.
 
 ## Before final v1.0.0
 

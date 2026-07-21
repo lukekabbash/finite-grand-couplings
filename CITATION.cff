@@ -3,9 +3,10 @@ message: "If you use this review package, please cite the release and the Grimme
 title: "Coalescence-Class Cardinalities in Finite Grand Couplings Need Not Be Deterministic"
 type: software
 abstract: >-
-  A reproducible research package containing a symbolic counterexample family,
-  a computer-assisted state-minimality theorem, independent implementations,
-  frozen results, external-review guidance, and the accompanying manuscript.
+  A mostly autonomous AI research package containing a symbolic counterexample
+  family, a computer-assisted state-minimality theorem, independent
+  implementations, frozen results, external-review guidance, and the
+  accompanying manuscript.
 authors:
   - family-names: Kabbash
     given-names: Luke
