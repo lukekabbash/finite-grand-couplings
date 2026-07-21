@@ -54,7 +54,7 @@ from academic_pdf import (  # noqa: E402
 OUTPUT = Path(__file__).resolve().with_name("grand-coupling-counterexample.pdf")
 TITLE_TEXT = "Coalescence-Class Cardinalities in Finite Grand Couplings Need Not Be Deterministic"
 SHORT_TITLE = "Coalescence-class cardinalities"
-AUTHOR_TEXT = "Luke Kabbash | Project initiator"
+AUTHOR_TEXT = "Luke Kabbash | GPT-5.6 Sol"
 MANUSCRIPT_DATE = "20 July 2026"
 
 
