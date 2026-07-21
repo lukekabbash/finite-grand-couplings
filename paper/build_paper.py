@@ -9,15 +9,7 @@ from pathlib import Path
 
 from reportlab.lib import colors
 from reportlab.lib.units import inch
-from reportlab.platypus import (
-    Flowable,
-    KeepTogether,
-    NextPageTemplate,
-    Paragraph,
-    Spacer,
-    Table,
-    TableStyle,
-)
+from reportlab.platypus import Flowable, KeepTogether, NextPageTemplate, Paragraph, Spacer
 
 
 REPOSITORY = Path(__file__).resolve().parents[1]
@@ -44,8 +36,6 @@ from academic_pdf import (  # noqa: E402
     SERIF_BOLD,
     SERIF_ITALIC,
     SUBTITLE,
-    THEOREM,
-    THEOREM_LABEL,
     TITLE,
     Rule,
     booktabs,
@@ -243,30 +233,6 @@ def reference(number: int, text: str) -> Paragraph:
     return p(f"[{number}] {text}", REFERENCE)
 
 
-def main_theorem(width: float) -> Table:
-    content = [
-        Paragraph("Theorem.", THEOREM_LABEL),
-        Paragraph(
-            "For every integer m ≥ 1 and p ∈ (0,1), there is an irreducible, aperiodic grand coupling on 4m+2 states whose terminal profiles are (2m, 2m+2) and (2m+1, 2m+1), both with positive probability; moreover, no irreducible grand coupling with a nonconstant terminal profile exists on fewer than six states (the latter assertion is computer-assisted).",
-            THEOREM,
-        ),
-    ]
-    table = Table([[content]], colWidths=[width])
-    table.setStyle(
-        TableStyle(
-            [
-                ("LINEABOVE", (0, 0), (-1, -1), 1.2, INK),
-                ("LINEBELOW", (0, 0), (-1, -1), 0.8, INK),
-                ("TOPPADDING", (0, 0), (-1, -1), 9),
-                ("BOTTOMPADDING", (0, 0), (-1, -1), 10),
-                ("LEFTPADDING", (0, 0), (-1, -1), 0),
-                ("RIGHTPADDING", (0, 0), (-1, -1), 0),
-            ]
-        )
-    )
-    return table
-
-
 def build_story(width: float):
     story = [
         Spacer(1, 6),
@@ -280,7 +246,6 @@ def build_story(width: float):
             "Let F<sub>1</sub>, F<sub>2</sub>, ... be independent random self-maps of a finite set, and apply each map simultaneously to trajectories started from every state. Grimmett and Holmes asked whether, for a fixed consistent grand coupling, the cardinalities of the eventual coalescence classes must be deterministic. We answer in the negative. For every m ≥ 1 and 0 &lt; p &lt; 1, we construct a two-map coupling on 4m+2 states whose terminal profile is (2m, 2m+2) with probability 1/(2-p) and (2m+1, 2m+1) with probability (1-p)/(2-p). The induced Markov chain is irreducible and aperiodic, and exactly two classes remain almost surely. The proof is symbolic. A separate exhaustive kernel-graph census establishes, with computer assistance, that no example exists on fewer than six states; thus the six-state instance is state-minimal without a restriction on support size. Reproducible Python and C++ implementations accompany the manuscript.",
             ABSTRACT,
         ),
-        main_theorem(width),
         p(
             "<b>Keywords.</b> grand coupling; random mapping representation; coalescence; transformation monoid; kernel graph; synchronizing automaton; computer-assisted proof",
             BODY_SMALL,
