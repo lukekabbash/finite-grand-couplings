@@ -1,8 +1,8 @@
 # Coalescence-class cardinalities in finite grand couplings
 
-This repository contains a self-contained preprint, its internal verification report, and the exact programs supporting a counterexample to Grimmett and Holmes, Open Problem 3.11.
+This repository contains a self-contained preprint and the exact programs supporting a counterexample to Grimmett and Holmes, Open Problem 3.11.
 
-**Status:** public review candidate `v1.0.0-rc.1`; internally verified; independent peer review and publication priority remain pending.
+**Status:** public review candidate `v1.0.0-rc.2`; the complete reproduction pipeline passes; independent peer review and publication priority remain pending.
 
 Repository: <https://github.com/lukekabbash/finite-grand-couplings>
 
@@ -18,12 +18,10 @@ The symbolic proof does not depend on a search. A separate computer-assisted the
 ## Read first
 
 - [Academic preprint](paper/grand-coupling-counterexample.pdf)
-- [Internal verification report](audit/internal-verification.pdf)
 - [Recorded exact results](results/RESULTS.md)
-- [Human-readable audit source](audit/INTERNAL_VERIFICATION.md)
 - [Guide for external reviewers](REVIEW_GUIDE.md)
 
-The internal report is adversarial and detailed, but it is not independent peer review. It states which claims are proved symbolically, which are computer-assisted, and which remain conjectural or unestablished.
+The review guide states which claims are symbolic, which are computer-assisted, and which remain outside the established result.
 
 ## Reproduce the mathematics
 
@@ -59,7 +57,7 @@ python3 -m pip install -r requirements-docs.txt
 ./build_documents.sh
 ```
 
-The builders use US Letter pages, core PDF fonts, deterministic ReportLab output, bookmarks, live reference links, and structural PDF checks. The manuscript builder is [paper/build_paper.py](paper/build_paper.py); the verification PDF is rendered from [audit/INTERNAL_VERIFICATION.md](audit/INTERNAL_VERIFICATION.md).
+The builder uses US Letter pages, core PDF fonts, deterministic ReportLab output, bookmarks, live reference links, and structural PDF checks. The manuscript builder is [paper/build_paper.py](paper/build_paper.py).
 
 After an intentional edit, build, regenerate the drift ledger, and rerun all checks with:
 
@@ -87,7 +85,6 @@ Simulation is not used to prove the theorem. Discovery scripts are kept separate
 
 ```text
 paper/          academic preprint, source, and PDF
-audit/          internal verification source and PDF
 verification/   theorem-bearing exact Python and C++ programs
 experiments/    seeded properties, exact stationarity, and simulation checks
 exploration/    discovery programs; not part of the proof

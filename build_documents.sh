@@ -16,7 +16,5 @@ command -v "$python_command" >/dev/null 2>&1 || {
 }
 
 "$python_command" "$release_root/paper/build_paper.py"
-"$python_command" "$release_root/audit/build_verification.py"
 "$python_command" "$release_root/tools/qa_pdfs.py"
-printf '%s\n' "Document build and structural PDF checks: PASS"
-
+printf '%s\n' "Paper build and structural PDF checks: PASS"

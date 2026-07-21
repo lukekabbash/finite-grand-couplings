@@ -1,6 +1,6 @@
 # External review guide
 
-This is the `v1.0.0-rc.1` public review candidate. It is intended to make the strongest claims easy to attack, reproduce, or correct before a final release.
+This is the `v1.0.0-rc.2` public review candidate. It is intended to make the strongest claims easy to attack, reproduce, or correct before a final release.
 
 ## Highest-value mathematical checks
 
@@ -20,7 +20,7 @@ From the repository root:
 
 The command verifies the release manifest, runs the exact Python checks, compiles independent C++ verifiers, executes the exhaustive censuses, runs sanitizer builds, and finishes with deterministic properties and a seeded simulation smoke test. The simulation is not part of the proof.
 
-To rebuild the manuscript and internal audit with the pinned Python dependencies:
+To rebuild the manuscript with the pinned Python dependencies:
 
 ```sh
 python3 -m pip install -r requirements-docs.txt
@@ -33,6 +33,5 @@ python3 -m pip install -r requirements-docs.txt
 - The assertion that six states are necessary is computer-assisted.
 - The observed monoid-size formula is not claimed for all family members.
 - Novelty and publication priority remain provisional pending specialist review.
-- The internal audit is adversarial self-checking, not independent review.
 
 Please report mathematical objections, reproduction failures, or relevant prior work through [GitHub Issues](https://github.com/lukekabbash/finite-grand-couplings/issues). Demonstrated errors will be documented and corrected, or the affected claims withdrawn.
