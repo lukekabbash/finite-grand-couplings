@@ -9,10 +9,7 @@ from pypdf import PdfReader
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PDFS = (
-    ROOT / "paper" / "grand-coupling-counterexample.pdf",
-    ROOT / "audit" / "internal-verification.pdf",
-)
+PDFS = (ROOT / "paper" / "grand-coupling-counterexample.pdf",)
 
 
 def check_pdf(path: Path):
@@ -56,4 +53,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

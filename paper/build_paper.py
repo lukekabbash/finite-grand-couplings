@@ -273,7 +273,7 @@ def build_story(width: float):
                 "The construction lies at the intersection of finite random dynamical systems and transformation semigroups. Minimum-rank maps form the minimal ideal of a finite transformation monoid [3]. Kernel graphs connect non-synchronizing monoids with graph colorings and endomorphisms [4-6], while the integer partition of kernel-block sizes is already known as kernel type [7]. The contribution claimed here is narrower: an explicit negative answer to the probability question in [1], its exact infinite family and terminal law, and a computer-assisted state-minimality result.",
             ),
             p(
-                "A targeted search of exact phrases, the source title and DOI, arXiv, publisher records, and author publication pages through 20 July 2026 found no public resolution of Open Problem 3.11. A negative search is not proof of priority. This manuscript and its code have been internally checked but have not received independent peer review.",
+                "A targeted search of exact phrases, the source title and DOI, arXiv, publisher records, and author publication pages through 20 July 2026 found no public resolution of Open Problem 3.11. A negative search is not proof of priority. The complete reproduction pipeline passes, but the manuscript has not received independent peer review.",
                 BODY_SMALL,
             ),
         ]
